@@ -12,21 +12,20 @@ public class FizzBuzzTest {
 
     FizzBuzz fb;
 
-
-
+    @Test
     public void testIsFizz() throws Exception {
         assertTrue(fb.isFizz(3));
         assertFalse(fb.isFizz(1));
     }
 
-
+    @Test
     public void testIsBuzz() throws Exception {
 
         assertTrue(fb.isBuzz(5));
         assertFalse(fb.isBuzz(4));
     }
 
-
+    @Test
     public void testFizzBuzzGenerate() throws Exception {
         assertEquals("1\n" +
                 "2\n" +
@@ -42,7 +41,7 @@ public class FizzBuzzTest {
                 "Fizz\n" +
                 "13\n" +
                 "14\n" +
-                "FizzBuzz",
+                "FizzBuzz\n",
                 fb.fizzBuzzGenerate(15));
     }
 

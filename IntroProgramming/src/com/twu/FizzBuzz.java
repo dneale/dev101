@@ -8,24 +8,23 @@ public class FizzBuzz {
     private static String FIZZ_TEXT = "Fizz";
     private static String BUZZ_TEXT = "Buzz";
 
-    public FizzBuzz()
-    {
-
-    }
+    public FizzBuzz() {}
 
     public boolean isFizz(int num)
     {
-        return true;
+        /* Is divisible by 3? */
+        return num % 3 == 0;
     }
 
     public boolean isBuzz(int num)
     {
-        return true;
+        /* Is divisible by 5? */
+        return num % 5 == 0;
     }
 
     public String fizzBuzzGenerate(int range)
     {
-        String output = new String();
+        String output = "";
         for (int i = 1; i <= range; i++) {
             if (isFizz(i))
                 output += FIZZ_TEXT;
